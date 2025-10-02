@@ -1,4 +1,7 @@
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.PriorityQueue;
 
 public class merga{
     public static void main(String args[]){
@@ -56,5 +59,20 @@ public class merga{
         }
 
         return  totalArray;
+    }
+
+    public static List<Integer> merge(int[] arr1, int[] arr2) {
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        
+        // Add elements of both arrays
+        for(int num : arr1) minHeap.add(num);
+        for(int num : arr2) minHeap.add(num);
+        
+        // Extract elements in sorted order
+        List<Integer> result = new ArrayList<>();
+        while(!minHeap.isEmpty()) {
+            result.add(minHeap.poll());
+        }
+        return result;
     }
 }
