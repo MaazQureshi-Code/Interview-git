@@ -11,3 +11,4 @@ def rotateArray(a, b):
 
 
 print(rotateArray([1,2,3,4,5,6],1))
+print(rotateArray([1,2,3,4,5,6],2))
