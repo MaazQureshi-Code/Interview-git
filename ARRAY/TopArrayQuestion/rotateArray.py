@@ -1,5 +1,5 @@
 # rotated an array by the b position in here  i will do this tommrow learn it and then do it javascript 
-
+# it is never easy at all 
 def rotateArray(a, b):
     n = len(a)
     b = b % n # in case b is greater then length of the array
